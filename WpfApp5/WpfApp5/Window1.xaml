@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="3,0,-3,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Окно организатора" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+               FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="15,0,12,0">
+            <Image Source="C:\Users\221PK02\Desktop\WpfApp5\WpfApp5\NewFolder1\aleksandr-vinogradov-portret-dasha-milko-prelest-vesnushki.jpg" Height="124" Width="202" HorizontalAlignment="Left" Margin="24,0,0,0" />
+            <TextBox x:Name="Date" Text="Мероприятия"
+                     FontFamily="Times New Roman" FontSize="20" Width="274" Height="50" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="243,10,-233,5" />
+            <TextBox x:Name="City" Text="Участники" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     FontFamily="Times New Roman" FontSize="20" Margin="243,0,-233,5" Width="274" Height="50" TextAlignment="Center"/>
+            <TextBox x:Name="Or" Text="Жюри" VerticalAlignment="Center" HorizontalAlignment="Center"
+                     FontFamily="Times New Roman" FontSize="20" Margin="243,0,-233,5" Width="274" Height="50" TextAlignment="Center"/>
+        </StackPanel>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="8,2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Доброе утро/lдень/вечер!" VerticalAlignment="Top" Width="149"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="42,24,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"><Run Text="Ms/Mrs "/><Run Text="Имя"/></TextBlock>
+        <Button Content="Мой профиль" HorizontalAlignment="Left" Height="73" Margin="58,93,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="145" Grid.Row="2"/>
+    </Grid>
+</Window>
